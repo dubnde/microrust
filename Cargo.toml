@@ -1,0 +1,29 @@
+[package]
+name = "microrust"
+version = "0.1.0"
+authors = ["<me>"]
+edition = "2021"
+
+[dependencies]
+cortex-m = "0.7"
+cortex-m-rt = "0.7"
+microbit-v2 = "0.13"
+panic-halt = "0.2"
+rtt-target = { version = "0.3", features = ["cortex-m"] }
+panic-rtt-target = { version = "0.1", features = ["cortex-m"] }
+
+[[bin]]
+name = "light-it-up"
+path = "src/light-it-up.rs"
+
+[[bin]]
+name = "delaying"
+path = "src/delaying.rs"
+
+[[bin]]
+name = "blinking"
+path = "src/blinking.rs"
+
+[[bin]]
+name = "blinking-rotate"
+path = "src/blinking-rotate.rs"
