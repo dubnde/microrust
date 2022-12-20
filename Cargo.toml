@@ -11,6 +11,9 @@ microbit-v2 = "0.13"
 panic-halt = "0.2"
 rtt-target = { version = "0.3", features = ["cortex-m"] }
 panic-rtt-target = { version = "0.1", features = ["cortex-m"] }
+embedded-hal = "0.2"
+nb = "1.0.0"
+heapless = "0.7"
 
 [[bin]]
 name = "light-it-up"
@@ -27,3 +30,24 @@ path = "src/blinking.rs"
 [[bin]]
 name = "blinking-rotate"
 path = "src/blinking-rotate.rs"
+
+[[bin]]
+name = "uarte-send-single-byte"
+path = "src/uarte-send-single-byte.rs"
+
+[[bin]]
+name = "uarte-send-a-string"
+path = "src/uarte-send-a-string.rs"
+
+[[bin]]
+name = "uarte-receive-single-byte"
+path = "src/uarte-receive-single-byte.rs"
+
+[[bin]]
+name = "uarte-echo-server"
+path = "src/uarte-echo-server.rs"
+
+[[bin]]
+name = "uarte-reverse-string-server"
+path = "src/uarte-reverse-string-server.rs"
+
